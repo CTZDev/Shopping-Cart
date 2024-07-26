@@ -1,3 +1,5 @@
+//! TODO: AGREGAR FUNCIONALIDAD A ELEMENTOS DE TABLA
+
 const Cart = () => {
   return (
     <>
@@ -5,7 +7,7 @@ const Cart = () => {
         <img src='./cart.png' alt='Cart' />
       </button>
 
-      <article id='container-cart' className='absolute top-full right-0'>
+      <article id='container-cart' className='absolute top-full right-0 hidden'>
         <table
           id='table-cart'
           className='table table-auto text-center border-collapse border-2 w-[340px] sm:w-96 md:w-[450px]'>
