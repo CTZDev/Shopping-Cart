@@ -5,7 +5,7 @@ interface Props {
 
 const Logo: React.FC<Props> = ({ img, alt }) => {
   return (
-    <figure className='border-black'>
+    <figure>
       <img src={img} alt={alt} />
     </figure>
   );
