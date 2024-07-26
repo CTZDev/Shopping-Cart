@@ -46,7 +46,7 @@ const Cart = () => {
           <tfoot className='table-footer-group'>
             <tr>
               <td colSpan={5} className='px-4 py-3'>
-                <button className='w-full p-1 font-bold uppercase border rounded-lg transition-all hover:bg-[#ff4e49] hover:text-white'>
+                <button className='w-full p-1 font-bold uppercase border rounded-lg tracking-wider transition-all hover:bg-[#ff4e49] hover:text-white'>
                   Vaciar carrito
                 </button>
               </td>
