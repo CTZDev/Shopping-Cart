@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@layer base {
+  @font-face {
+    font-family: 'Raleway-Thin';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Thin.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-ExtraLight';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-ExtraLight.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-SemiBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Bold.ttf') format('truetype');
+  }
+}
