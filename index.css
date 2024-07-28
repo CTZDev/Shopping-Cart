@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@layer base {
+  @font-face {
+    font-family: 'Raleway-Thin';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Thin.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-ExtraLight';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-ExtraLight.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-SemiBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    font-optical-sizing: auto;
+    src: url('./fonts/Raleway-Bold.ttf') format('truetype');
+  }
+}
+
+/* Hero */
+#hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  background: url('./hero.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+/* Banner */
+.banner-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  place-items: center;
+  text-align: center;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .banner-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Courses */
+#list-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.65rem;
+  border-radius: 6px;
+  width: 100%;
+  transition: all 500ms ease-in-out;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #2db0d8;
+  color: white;
+
+  &:hover {
+    background-color: #2fbfeb;
+  }
+}
