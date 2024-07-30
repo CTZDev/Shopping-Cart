@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --clr-primary: #2db0d8;
+  --clr-primary-shadow: #2fbfeb;
+}
+
 /* Fonts */
 @layer base {
   @font-face {
@@ -68,6 +73,10 @@
   }
 }
 
+li {
+  list-style: none;
+}
+
 /* Hero */
 #hero::after {
   content: '';
@@ -102,8 +111,9 @@
 /* Courses */
 #list-courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  justify-items: center;
+  align-items: center;
   gap: 1.5rem;
   padding: 2rem 0;
   max-width: 1280px;
@@ -123,10 +133,43 @@
 }
 
 .btn-primary {
-  background-color: #2db0d8;
+  background-color: var(--clr-primary);
   color: white;
 
   &:hover {
-    background-color: #2fbfeb;
+    background-color: var(--clr-primary-shadow);
+  }
+}
+/* Footer */
+
+footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--clr-primary);
+  text-align: center;
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 768px;
+  margin: auto;
+
+  & a {
+    display: inline-block;
+    color: var(--clr-primary);
+    font-weight: normal;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      color: var(--clr-primary-shadow);
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer div {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
