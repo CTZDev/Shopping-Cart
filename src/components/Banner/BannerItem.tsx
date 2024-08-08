@@ -12,7 +12,7 @@ const BannerItem: React.FC<Props> = ({
     <article className='banner-item flex flex-col items-center gap-3 xl:flex-row xl:text-left xl:gap-5'>
       <article className='banner-item flex flex-col items-center gap-3 xl:flex-row xl:text-left xl:gap-5'>
         <figure>
-          <img src={url} alt={title} className='w-8 h-12' />
+          <img src={url} alt={title} className='w-8 h-10' />
         </figure>
         <div className='banner-content'>
           <p>{firstContent}</p>
