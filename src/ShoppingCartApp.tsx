@@ -11,8 +11,8 @@ function App() {
       <main>
         <Hero />
         <Banner />
+        <Courses />
       </main>
-      <Courses />
       <Footer />
     </>
   );
