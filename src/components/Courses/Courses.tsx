@@ -2,9 +2,11 @@ import { useContext } from 'react';
 import CourseItem from './CourseItem';
 import { CartContext } from '../../contexts/CartContext';
 import type { CartItem } from '../../reducers/propsReducerCart';
+import { useCourses } from '../../hooks/useCourses';
 
 const Courses: React.FC = () => {
-  const [store, dispatch] = useContext(CartContext);
+  const { courses } = useCourses();
+  const [, dispatch] = useContext(CartContext);
 
   const handleAddToCart = (cartItem: CartItem) => {
     dispatch({
@@ -20,8 +22,8 @@ const Courses: React.FC = () => {
       </h2>
       <div className='mx-6'>
         <section id='list-courses' className='overflow-auto'>
-          {store.courses.length > 0 &&
-            store.courses.map((course) => (
+          {courses.length > 0 &&
+            courses.map((course) => (
               <CourseItem
                 key={course.id}
                 course={course}
